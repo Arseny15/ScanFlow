@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data and outputs
+data_scan/
+outputs/
+*.pkl
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Samples from scripts
+good_sample.png
+defect_sample.png
+
+# Old experimental dir
+xpl/

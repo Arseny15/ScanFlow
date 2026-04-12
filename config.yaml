@@ -1,0 +1,30 @@
+pipeline:
+  image_size: 224
+  grayscale: true
+  normalise: false
+
+detector:
+  algorithm: patchcore # Chop the image into small patches, check each patch
+  contamination: 0.1
+  n_estimators: 200
+  random_state: 42
+  threshold_percentile: 45
+# With p10, only scores worse than the bottom 10% of training get flagged too strict. With p50, anything worse than the bottom half gets flagged
+
+features:
+  method: cnn
+  cnn_model: resnet18
+  row_stats: true
+  col_stats: true
+  global_stats: true
+  texture: true
+
+paths:
+  data_dir: data_scan
+  output_dir: outputs
+  model_dir: outputs/models
+  reports_dir: outputs/reports
+
+logging:
+  level: INFO
+  file: outputs/scanflow.log
