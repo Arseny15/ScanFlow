@@ -123,6 +123,8 @@ class ScanProcessor:
 
     # ------------------------------------------------------------------
     # Handcrafted features
+    """Scan processing module - updated from main."""
+    # a
     # ------------------------------------------------------------------
 
     def _normalise(self, array: np.ndarray) -> np.ndarray:
