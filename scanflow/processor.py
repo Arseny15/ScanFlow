@@ -122,6 +122,8 @@ class ScanProcessor:
         return feat.squeeze().numpy().astype(np.float32)
 
     # Handcrafted features
+    """Scan processing module - updated from Ars_branch."""
+    # b
 
     def _normalise(self, array: np.ndarray) -> np.ndarray:
         if not self.cfg.pipeline.normalise:
