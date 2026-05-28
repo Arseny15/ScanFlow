@@ -121,9 +121,7 @@ class ScanProcessor:
 
         return feat.squeeze().numpy().astype(np.float32)
 
-    # ------------------------------------------------------------------
     # Handcrafted features
-    # ------------------------------------------------------------------
 
     def _normalise(self, array: np.ndarray) -> np.ndarray:
         if not self.cfg.pipeline.normalise:
