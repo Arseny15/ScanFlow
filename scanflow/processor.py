@@ -121,7 +121,11 @@ class ScanProcessor:
 
         return feat.squeeze().numpy().astype(np.float32)
 
+    # ------------------------------------------------------------------
     # Handcrafted features
+    # ------------------------------------------------------------------
+    """Scan processing module - updated from main."""
+    # a
     """Scan processing module - updated from Ars_branch."""
     # b
 
