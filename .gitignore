@@ -27,6 +27,9 @@ outputs/
 .DS_Store
 Thumbs.db
 
+# Local Claude Code guidance (keep out of remote)
+CLAUDE.md
+
 # Samples from scripts
 good_sample.png
 defect_sample.png
